@@ -1,4 +1,3 @@
-
 import { Switch } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
@@ -12,10 +11,10 @@ import Notfound from './components/Notfound/Notfound';
 import Footer from './components/Header/Footer/Footer';
 import Login from './components/Login/Login/Login';
 import Register from './components/Login/Login/Register/Register';
-import Authprovider from './Context/Authprovider';
+import AuthProvider from './Context/Authprovider';
 import Services from './components/Services/Services';
 import Doctors from './components/Services/Doctors/Doctors';
-import Appointment from './components/Services/Appointment/Appointment';
+import OnlineScreening from './components/Services/OnlineScreening/OnlineScreening';
 import ServiceDetails from './components/Services/ServiceDetails/ServiceDetails';
 import PrivetRoute from './PrivetRoute/PrivetRoute';
 
@@ -23,76 +22,110 @@ import PrivetRoute from './PrivetRoute/PrivetRoute';
 export const myTheme = createTheme({
   palette: {
     primary: {
-      main: '#e91e63',
+      main: '#2196f3', // Medical blue
+      light: '#64b5f6',
+      dark: '#1976d2',
     },
     secondary: {
-      main: '#f48fb1',
+      main: '#4caf50', // Success green
+      light: '#81c784',
+      dark: '#388e3c',
     },
-    alternate: {
-      main: '#fff',
+    error: {
+      main: '#f44336', // Warning red
+    },
+    background: {
+      default: '#f5f5f5',
+      paper: '#ffffff',
     },
     text: {
-      secondary: '#212121',
+      primary: '#212121',
+      secondary: '#757575',
     },
   },
   typography: {
-    fontFamily: "Quicksand",
-    fontWeightLight: 400,
-    fontWeightRegular: 500,
-    fontWeightMedium: 600,
-    fontWeightBold: 700,
-  }
-
+    fontFamily: "'Roboto', 'Arial', sans-serif",
+    h1: {
+      fontWeight: 500,
+    },
+    h2: {
+      fontWeight: 500,
+    },
+    h3: {
+      fontWeight: 500,
+    },
+    h4: {
+      fontWeight: 500,
+    },
+    h5: {
+      fontWeight: 500,
+    },
+    h6: {
+      fontWeight: 500,
+    },
+  },
+  shape: {
+    borderRadius: 8,
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: 'none',
+          fontWeight: 500,
+        },
+      },
+    },
+  },
 });
 
 function App() {
   return (
     <>
-      <Authprovider>
+      <AuthProvider>
         <ThemeProvider theme={myTheme}>
           <BrowserRouter>
-            <Header></Header>
+            <Header />
             <Switch>
               <Route exact path='/'>
-                <Home></Home>
+                <Home />
               </Route>
               <Route path='/home'>
-                <Home></Home>
+                <Home />
               </Route>
               <PrivetRoute path='/doctors'>
-                <Doctors></Doctors>
+                <Doctors />
               </PrivetRoute>
               <Route path='/login'>
-                <Login></Login>
+                <Login />
               </Route>
               <Route path='/register'>
-                <Register></Register>
+                <Register />
               </Route>
               <Route path='/about'>
-                <About></About>
+                <About />
               </Route>
               <Route path='/profile'>
-                <Login></Login>
+                <Login />
               </Route>
-              <PrivetRoute path='/appointment'>
-                <Appointment></Appointment>
+              <PrivetRoute path='/screening'>
+                <OnlineScreening />
               </PrivetRoute>
               <Route exact path='/services'>
-                <Services></Services>
+                <Services />
               </Route>
               <PrivetRoute exact path='/services/details/:servId'>
-                <ServiceDetails></ServiceDetails>
+                <ServiceDetails />
               </PrivetRoute>
               <Route path='*'>
-                <Notfound></Notfound>
+                <Notfound />
               </Route>
             </Switch>
-            <Footer></Footer>
+            <Footer />
           </BrowserRouter>
         </ThemeProvider>
-      </Authprovider>
+      </AuthProvider>
     </>
-
   );
 }
 

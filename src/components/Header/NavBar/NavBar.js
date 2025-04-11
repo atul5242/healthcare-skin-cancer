@@ -14,7 +14,9 @@ const settings = ['Profile', 'Logout'];
 const Navbar = () => {
     // authentication 
     const { logout, user } = useAuth();
-    const { displayName, photoURL } = user;
+    // Safely access user properties with optional chaining
+    const displayName = user?.displayName;
+    const photoURL = user?.photoURL;
 
     //navigation
     let history = useHistory();
@@ -42,7 +44,6 @@ const Navbar = () => {
             logout();
         }
         else if (userEvent === 'Profile') {
-            console.log('ok');
             history.push("/profile");
         }
     };
@@ -56,10 +57,9 @@ const Navbar = () => {
                             noWrap
                             component="div"
                             sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-                        > <HealingTwoToneIcon
-                                fontSize='large'
-                            />
-                            Health Haven Hospital
+                        > 
+                            <HealingTwoToneIcon fontSize='large' />
+                            AI Skin Cancer Detection
                         </Typography>
 
                         <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -87,55 +87,30 @@ const Navbar = () => {
                                 }}
                                 open={Boolean(anchorElNav)}
                                 onClose={handleCloseNavMenu}
-
                                 sx={{
                                     display: { xs: 'block', md: 'none' },
                                 }}
                             >
-                                {/*-------- small skin navigation-------- */}
-                                <MenuItem
-                                    bgcolor="primary"
-                                    component={HashLink}
-                                    smooth to='/home#home'
-                                >home
+                                <MenuItem component={HashLink} smooth to='/home#home'>
+                                    Home
                                 </MenuItem>
-
-                                <MenuItem
-                                    bgcolor="primary"
-                                    component={HashLink}
-                                    smooth to='/services#services'
-                                >Services
+                                <MenuItem component={HashLink} smooth to='/services#services'>
+                                    AI Services
                                 </MenuItem>
-
-                                <MenuItem
-                                    bgcolor="primary"
-                                    component={HashLink}
-                                    smooth to='/doctors#doctors'
-                                >Doctors
+                                <MenuItem component={HashLink} smooth to='/doctors#doctors'>
+                                    Analysis Models
                                 </MenuItem>
-                                <MenuItem
-                                    bgcolor="primary"
-                                    component={HashLink}
-                                    smooth to='/appointment#appointment'
-                                >Appointment
+                                <MenuItem component={HashLink} smooth to='/screening#screening'>
+                                    Online Screening
                                 </MenuItem>
-
-                                <MenuItem
-                                    bgcolor="primary"
-                                    component={HashLink}
-                                    smooth to='/about#about'
-                                >About
+                                <MenuItem component={HashLink} smooth to='/about#about'>
+                                    About
                                 </MenuItem>
-                                {!user?.email &&
-                                    <MenuItem
-                                        bgcolor="primary"
-
-                                        component={HashLink}
-                                        smooth to='/login#login'
-                                    >Login
+                                {!user?.email && (
+                                    <MenuItem component={HashLink} smooth to='/login#login'>
+                                        Login
                                     </MenuItem>
-                                }
-
+                                )}
                             </Menu>
                         </Box>
 
@@ -145,78 +120,49 @@ const Navbar = () => {
                             component="div"
                             sx={{ flexGrow: 1, pt: 2, display: { xs: 'flex', md: 'none' } }}
                         >
-                            <HealingTwoToneIcon
-                                fontSize='large' />  Health Haven Hospital
+                            <HealingTwoToneIcon fontSize='large' /> AI Skin Cancer Detection
                         </Typography>
+
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-
-                            {/*-------- large skin navigation-------- */}
-
-                            <HashLink
-                                className="text-style text-style-fullscrn "
-                                smooth to='/home#home'>
-                                <Button
-
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >Home
-                                </Button></HashLink>
-
-                            <HashLink
-                                className="text-style text-style-fullscrn "
-                                smooth to='/services#services'>
-                                <Button
-
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >Services
-                                </Button></HashLink>
-
-                            <HashLink
-                                className="text-style text-style-fullscrn "
-                                smooth to='/doctors#doctors'>
-                                <Button
-
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >Doctors
-                                </Button></HashLink>
-
-                            <HashLink
-                                className="text-style text-style-fullscrn "
-                                smooth to='/appointment#appointment'>
-                                <Button
-
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >Appointment
-                                </Button></HashLink>
-
-                            <HashLink
-                                className="text-style text-style-fullscrn "
-                                smooth to='/about#about'>
-                                <Button
-
-                                    sx={{ my: 2, color: 'white', display: 'block' }}
-                                >About
-                                </Button></HashLink>
-                            {!user?.email &&
-                                <HashLink
-                                    className="text-style text-style-fullscrn "
-                                    smooth to='/login#login'>
-                                    <Button
-
-                                        sx={{ my: 2, color: 'white', display: 'block' }}
-                                    >Login
-                                    </Button></HashLink>
-                            }
-
-
+                            <HashLink className="text-style text-style-fullscrn" smooth to='/home#home'>
+                                <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+                                    Home
+                                </Button>
+                            </HashLink>
+                            <HashLink className="text-style text-style-fullscrn" smooth to='/services#services'>
+                                <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+                                    AI Services
+                                </Button>
+                            </HashLink>
+                            <HashLink className="text-style text-style-fullscrn" smooth to='/doctors#doctors'>
+                                <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+                                    Analysis Models
+                                </Button>
+                            </HashLink>
+                            <HashLink className="text-style text-style-fullscrn" smooth to='/screening#screening'>
+                                <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+                                    Online Screening
+                                </Button>
+                            </HashLink>
+                            <HashLink className="text-style text-style-fullscrn" smooth to='/about#about'>
+                                <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+                                    About
+                                </Button>
+                            </HashLink>
+                            {!user?.email && (
+                                <HashLink className="text-style text-style-fullscrn" smooth to='/login#login'>
+                                    <Button sx={{ my: 2, color: 'white', display: 'block' }}>
+                                        Login
+                                    </Button>
+                                </HashLink>
+                            )}
                         </Box>
 
-                        {/* user info and navigation btn */}
-
-                        {
-                            user?.email ? <Box sx={{ flexGrow: 0 }}>
+                        {user?.email ? (
+                            <Box sx={{ flexGrow: 0 }}>
                                 <Tooltip title="Open settings">
                                     <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                        <Avatar alt="Remy Sharp" src={user?.email ? photoURL : "/static/images/avatar/2.jpg"} />
+                                        <Avatar alt={displayName || 'User'} src={photoURL || "/static/images/avatar/2.jpg"} />
                                     </IconButton>
                                 </Tooltip>
                                 <Menu
@@ -234,20 +180,24 @@ const Navbar = () => {
                                     }}
                                     open={Boolean(anchorElUser)}
                                     onClose={handleCloseUserMenu}
-                                >  <Typography sx={{ p: '5px' }} color="primary" textAlign="center">Hi, {displayName}</Typography>
+                                >
+                                    <Typography sx={{ p: '5px' }} color="primary" textAlign="center">
+                                        Hi, {displayName || 'User'}
+                                    </Typography>
                                     <Divider />
                                     {settings.map((setting) => (
                                         <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                            <Typography onClick={handleUserControl} textAlign="center">{setting}</Typography>
+                                            <Typography onClick={handleUserControl} textAlign="center">
+                                                {setting}
+                                            </Typography>
                                         </MenuItem>
                                     ))}
                                 </Menu>
-                            </Box> : <></>
-                        }
+                            </Box>
+                        ) : null}
                     </Toolbar>
                 </Container>
             </AppBar>
-
         </Box>
     );
 };

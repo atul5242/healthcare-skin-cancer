@@ -3,65 +3,65 @@
 		{
 			"id": 1,
 			"class": "",
-			"treatment": "Cardiology",
-			"price": 15000,
-			"description": "Keeping your heart strong and healthy is crucial to your overall well-being. Our cardiology services are here to help you manage and treat your heart health no matter what you might need.",
-			"icon": "https://i.ibb.co/DpVdYqQ/heart-2.png",
-			"service_img": "https://i.ibb.co/rG0TSwX/01.jpg"
+			"treatment": "Skin Cancer Detection",
+			"price": 20000,
+			"description": "Using advanced Deep Learning models and Generative Adversarial Networks (GAN), we provide accurate and fast skin cancer detection. This AI-driven service helps identify potential skin cancer lesions in images of the skin, offering early detection for better treatment outcomes.",
+			"icon": "https://i.ibb.co/6Fc1Lgf/skin-cancer.png",
+			"service_img": "https://i.ibb.co/LxF7D5k/skin-cancer-detection.jpg"
 		},
 		{
 			"id": 2,
 			"class": "animation",
-			"treatment": "Neurology",
-			"price": 25000,
-			"description": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions: Central nervous system: the brain and spinal cord.",
-			"icon": "https://i.ibb.co/nzHc2t7/brain-2.png",
-			"service_img": "https://i.ibb.co/Bn2GG0N/06.jpg"
+			"treatment": "ML-Based Skin Cancer Diagnosis",
+			"price": 30000,
+			"description": "Leverage cutting-edge machine learning algorithms to diagnose skin cancer at the earliest stages. Our service uses high-resolution images and pattern recognition to detect melanoma, basal cell carcinoma, and squamous cell carcinoma.",
+			"icon": "https://i.ibb.co/2gFQncr/ml-skin.png",
+			"service_img": "https://i.ibb.co/SJTGbm5/ml-skin-diagnosis.jpg"
 		},
 		{
 			"id": 3,
 			"class": "",
-			"treatment": "Stomach",
-			"price": 3000,
-			"description": "What is the stomach? The stomach is a J-shaped organ that digests food. It produces enzymes (substances that create chemical reactions) and acids (digestive juices). This mix of enzymes and digestive juices breaks down food so it can pass to your small intestine. Your stomach is part of the gastrointestinal (GI) tract.",
-			"icon": "https://i.ibb.co/Ks1jsVf/stomach-2.png",
-			"service_img": "https://i.ibb.co/CK7Y2DD/03.jpg"
+			"treatment": "AI-Powered Risk Assessment",
+			"price": 15000,
+			"description": "AI-powered risk assessments can predict the likelihood of skin cancer by analyzing various factors like age, skin type, and lesion characteristics. Our models are trained to consider all these inputs for highly accurate predictions.",
+			"icon": "https://i.ibb.co/qMxghgQ/ai-risk.png",
+			"service_img": "https://i.ibb.co/kyXkVsq/ai-risk-assessment.jpg"
 		},
 		{
 			"id": 4,
 			"class": "",
-			"treatment": "Covid 19",
-			"price": 100,
-			"description": "Most people infected with the virus will experience mild to moderate respiratory illness and recover without requiring special treatment. However, some will become seriously ill and require medical attention. Older people and those with underlying medical conditions like cardiovascular disease, diabetes, chronic respiratory disease, or cancer are more likely to develop serious illness. Anyone can get sick with COVID-19 and become seriously ill or die at any age.",
-			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
-			"service_img": "https://i.ibb.co/3FS3B8h/08.jpg"
+			"treatment": "GAN-Based Image Enhancement",
+			"price": 10000,
+			"description": "Generative Adversarial Networks (GANs) can enhance low-quality skin images, making it easier for dermatologists and AI systems to detect signs of skin cancer. This service improves the clarity and detail of images, enhancing diagnostic accuracy.",
+			"icon": "https://i.ibb.co/mvrTKJX/gan-image.png",
+			"service_img": "https://i.ibb.co/WF5K0L4/gan-enhancement.jpg"
 		},
 		{
 			"id": 5,
 			"class": "animation",
-			"treatment": "Lungs",
-			"price": 9000,
-			"description": "The lungs are a pair of spongy, air-filled organs located on either side of the chest (thorax). The trachea (windpipe) conducts inhaled air into the lungs through its tubular branches, called bronchi. The bronchi then divide into smaller and smaller branches (bronchioles), finally becoming microscopic.",
-			"icon": "https://i.ibb.co/w0Mh2Jf/lungs.png",
-			"service_img": "https://i.ibb.co/q9SM3XT/10.jpg"
+			"treatment": "3D Skin Mapping",
+			"price": 40000,
+			"description": "3D skin mapping combines GAN and deep learning models to create detailed, high-resolution 3D images of your skin. This allows for a thorough analysis of skin lesions, helping to identify any abnormal growths or changes over time.",
+			"icon": "https://i.ibb.co/kXrzXpq/3d-skin.png",
+			"service_img": "https://i.ibb.co/qn6r7G9/3d-skin-mapping.jpg"
 		},
 		{
 			"id": 6,
 			"class": "",
-			"treatment": "Bronchus",
-			"price": 1800,
-			"description": "(BRON-kus) A large airway that leads from the trachea (windpipe) to a lung. The plural of bronchus is bronchi. Enlarge. Anatomy of the respiratory system, showing the trachea and both lungs and their lobes and airways.",
-			"icon": "https://i.ibb.co/yyPd0N8/bronchus.png",
-			"service_img": "https://i.ibb.co/dDsVnnZ/09.jpg"
+			"treatment": "Melanoma Detection with Deep Learning",
+			"price": 25000,
+			"description": "Our deep learning models are specifically trained to detect melanoma, one of the most dangerous forms of skin cancer. Using images of skin lesions, our AI can accurately identify melanoma even in its early stages.",
+			"icon": "https://i.ibb.co/C1Wfs4s/melanoma.png",
+			"service_img": "https://i.ibb.co/X3X5w3Y/melanoma-detection.jpg"
 		},
 		{
 			"id": 7,
 			"class": "",
-			"treatment": "Vaccine",
-			"price": 0,
-			"description": "Safe and effective vaccines are available that provide strong protection against serious illness, hospitalization and death from COVID-19. Billions of people have been vaccinated against COVID-19. Getting vaccinated is one of the most important things you can do to protect yourself against COVID-19, help end the pandemic and stop new variants emerging. Take all COVID-19 vaccine doses recommended to you by your health authority as soon as it is your turn, including a booster dose if recommended.",
-			"icon": "https://i.ibb.co/NWKjgmj/virus-2.png",
-			"service_img": "https://i.ibb.co/02FMz1F/02.jpg"
+			"treatment": "Comprehensive Skin Cancer Screening",
+			"price": 50000,
+			"description": "A full screening that combines AI analysis, deep learning, and expert dermatological review. This service uses machine learning algorithms to scan large volumes of skin images, identifying potential cancerous lesions and providing a comprehensive risk profile.",
+			"icon": "https://i.ibb.co/8F6Phcn/screening.png",
+			"service_img": "https://i.ibb.co/KhZtL2z/skin-screening.jpg"
 		}
 	]
 }

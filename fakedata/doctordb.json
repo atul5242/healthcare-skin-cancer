@@ -3,56 +3,56 @@
         {
             "doc_id": 1,
             "name": "Lee S. Williamson",
-            "specialize": "Cardiology",
-            "doc_img": "https://i.ibb.co/b6SDFTN/01.jpg"
+            "specialize": "Skin Cancer Detection - Deep Learning",
+            "doc_img": "https://i.ibb.co/6Fc1Lgf/skin-cancer.png"
         },
         {
             "doc_id": 2,
             "name": "Greg S. Grinstead",
-            "specialize": "Neurology",
-            "doc_img": "https://i.ibb.co/gW26qY2/02.jpg"
+            "specialize": "Melanoma Diagnosis using AI",
+            "doc_img": "https://i.ibb.co/SJTGbm5/ml-skin-diagnosis.jpg"
         },
         {
             "doc_id": 3,
             "name": "Roger K. Jackson",
-            "specialize": "Orthopedics",
-            "doc_img": "https://i.ibb.co/hsyxYVj/03.jpg"
+            "specialize": "AI-Powered Dermatology Analysis",
+            "doc_img": "https://i.ibb.co/qMxghgQ/ai-risk.png"
         },
         {
             "doc_id": 4,
             "name": "Frank T. Grimsley",
-            "specialize": "Neurology",
-            "doc_img": "https://i.ibb.co/86xBJSh/04.jpg"
+            "specialize": "GAN-Enhanced Skin Imaging",
+            "doc_img": "https://i.ibb.co/WF5K0L4/gan-enhancement.jpg"
         },
         {
             "doc_id": 5,
             "name": "Rudolph V. Spitler",
-            "specialize": "Cardiology",
-            "doc_img": "https://i.ibb.co/hWD7NVx/05.jpg"
+            "specialize": "Early Skin Cancer Detection with Deep Learning",
+            "doc_img": "https://i.ibb.co/X3X5w3Y/melanoma-detection.jpg"
         },
         {
             "doc_id": 6,
             "name": "Erik R. Faulkner",
-            "specialize": "Cardiology",
-            "doc_img": "https://i.ibb.co/hYWtLy1/06.jpg"
+            "specialize": "AI Risk Assessment for Skin Cancer",
+            "doc_img": "https://i.ibb.co/kyXkVsq/ai-risk-assessment.jpg"
         },
         {
             "doc_id": 7,
             "name": "Phillip L. Williams",
-            "specialize": "Neurology",
-            "doc_img": "https://i.ibb.co/dPtTnys/07.jpg"
+            "specialize": "3D Skin Mapping for Cancer Detection",
+            "doc_img": "https://i.ibb.co/qn6r7G9/3d-skin-mapping.jpg"
         },
         {
             "doc_id": 8,
             "name": "Johnny R. Atterberry",
-            "specialize": "Orthopedics",
-            "doc_img": "https://i.ibb.co/ypmBR9k/08.jpg"
+            "specialize": "Skin Cancer Screening Using ML Models",
+            "doc_img": "https://i.ibb.co/LxF7D5k/skin-cancer-detection.jpg"
         },
         {
             "doc_id": 9,
             "name": "Michael I. Johnson",
-            "specialize": "Medecine",
-            "doc_img": "https://i.ibb.co/nj8qcCS/09.jpg"
+            "specialize": "Comprehensive Skin Cancer Diagnostics",
+            "doc_img": "https://i.ibb.co/KhZtL2z/skin-screening.jpg"
         }
     ]
 }
